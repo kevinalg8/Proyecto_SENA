@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+form{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: antiquewhite;
+}
