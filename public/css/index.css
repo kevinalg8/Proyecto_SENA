@@ -3,9 +3,40 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+/* valores de los estilos del formulario para loguearse*/
 form{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    background-color: antiquewhite;
+}
+
+
+/* Contenedor del formulario del login*/
+#hero{
+    min-height: 100vh;
+    position: relative;
+    z-index: 2;
+}
+
+/*video del fondo*/
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*detalles del fondo del login*/
+.fondolgn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
 }

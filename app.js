@@ -6,7 +6,6 @@ app.use("/resources", express.static("public"));
 app.use("/resources", express.static(__dirname + "/public"));
 //4- Estableciendo el motor de plantillas
 app.set('view engine','ejs');
-
 //Para poder capturar los datos del formulario (sin urlencoded nos devuelve "undefined")
 app.use(express.urlencoded({extended:false}));
 //además le decimos a express que vamos a usar json

@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/resources/css/index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Inicio de sesion</title>
 </head>
+
 <body>
-<header class="inicio"> </header>
+
+    <!-- contenedor del formulario para loguearse -->
+    <div id="hero">
+        <header class="inicio"></header>
 
 
-    <form action="/save10" method="POST" id="form">
-        <h1>Inicia sesión</h1><br><br>
-        <div class="form">
-        </div>
-        <div class="grupo">
-            <label for="">Correo</label>
-            <input type="email" name="email" id="email" required><span class="barra"></span>
-        </div>
-        <div class="grupo">
-            <label for="">Contraseña</label>
-            <input type="text" name="password" id="password" required><span class="barra"></span>
-        </div>
-        <button type="submit" class="btn btn-success">Crear</button>
+        <form action="/save10" method="POST" id="form">
+            <h1>Inicia sesión</h1><br><br>
+            <div class="grupo">
+                <label for="">Correo</label>
+                <input type="email" name="email" id="email" required><span class="barra"></span>
+            </div>
+            <div class="grupo">
+                <label for="">Contraseña</label>
+                <input type="text" name="password" id="password" required><span class="barra"></span>
+            </div>
+            <button type="submit" class="btn btn-success">Crear</button>
+        </form>
     </div>
-</form>
+    <!-- video para el fondo -->
+    <video src="/resources/VIDEOS/videolgn.mp4" muted autoplay loop type="video/mp4"></video>
+    <!-- contendor para los detalles visuales del fondo -->
+    <div class="fondolgn"></div>
 </body>
 
 
