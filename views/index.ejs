@@ -5,13 +5,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/resources/css/index.css">
+    <link rel="stylesheet" href="/resources/css/login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Inicio de sesion</title>
 </head>
 <body>
-    <!-- contenedor del formulario para loguearse -->
+<div class="">
+<div class="container">
+    <div class="login-container">
+        <input id="item-1" type="radio" name="item" class="sign-in" checked><label for="item-1" class="item">Sign In</label>
+        <input id="item-2" type="radio" name="item" class="sign-up" checked><label for="item-2" class="item">Sign Up</label>
+        <div class="login-form">
+            <div class="sign-in-htm">
+                <div class="group">
+                    <input placeholder="Username" id="user" type="text" class="input">
+                </div>
+                <div class="group">
+                    <input placeholder="Password" id="pass" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <input type="submit" class="button" value="Sign In">
+                </div>
+                <div class="hr"></div>
+                <div class="footer">
+                    <a href="#forgot">Forgot Password?</a>
+                </div>
+            </div>
+            <div class="sign-up-htm">
+                <div class="group">
+                    <input placeholder="Username" id="user" type="text" class="input">
+                </div>
+                <div class="group">
+                    <input placeholder="Email Adress" id="pass" type="text" class="input">
+                </div>
+                <div class="group">
+                    <input placeholder="Password" id="pass" type="password" class="input" data-type="password">
+                </div>
+                <div class="group">
+                    <input placeholder="Repeat Password" id="pass" type="password" class="input" data-type="password">
+                </div>
+
+                <div class="group">
+                    <input type="submit" class="button" value="Sign Up">
+                </div>
+                <div class="hr"></div>
+                <div class="footer">
+                    <label for="item-1"> Already have an account?</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="video">
+        <video src="/resources/VIDEOS/videolgn.mp4" muted autoplay loop type="video/mp4"></video>
+    </div>
+</div>
+
+
+    <!-- 
+    contenedor del formulario para loguearse
     <div id="hero" class="estilo">
         <header class="inicio"></header>
 
@@ -29,14 +83,14 @@
             <button type="submit" class="btn btn-success">Crear</button>
         </form>
         <div class="villian">
-            <h1>Registro</h1>
+            <h1></h1>
             <form action="" method="POST" id="form"></form>
         </div>
     </div>
-    <!-- video para el fondo -->
+    video para el fondo
     <video src="/resources/VIDEOS/videolgn.mp4" muted autoplay loop type="video/mp4"></video>
-    <!-- contendor para los detalles visuales del fondo -->
-    <div class="fondolgn"></div>
+    contendor para los detalles visuales del fondo
+    <div class="fondolgn"></div> -->
 </body>
 
 
