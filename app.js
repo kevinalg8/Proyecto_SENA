@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-//app.use(express.static('public'))
 
 app.use("/resources", express.static("public"));
 app.use("/resources", express.static(__dirname + "/public"));
@@ -13,11 +12,13 @@ app.use(express.json());
 
 
  //Establecemos las rutas para las VISTAS usando un archivo aparte (router.js) y la clase Router()
-//app.use('/', require('./router'));
+app.use('/', require('./router'));
 
 app.get('/', (req, res) => {
     res.render('index')
 })
+
+
 
 app.listen(8080, ()=>{
     console.log('SERVER corriendo en http://localhost:8080');
