@@ -1,0 +1,19 @@
+*{
+  margin: 0;  
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Color degrade */
+nav{
+    background: rgb(0,0,0);
+    background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(62,0,71,1) 35%, rgba(0,48,57,1) 100%); 
+}
+.navbar-brand{
+    padding: 20px;
+}
+.prod{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 2%;
+}
