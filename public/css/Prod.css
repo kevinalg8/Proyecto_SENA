@@ -1,19 +1,64 @@
+/* Textos */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+/* Titulos */
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@500&display=swap');
 *{
   margin: 0;  
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Rajdhani', sans-serif;
+}
+h1{
+    font-family: 'Murecho', sans-serif;
 }
 /* Color degrade */
 nav{
+    font-size: 2rem;
     background: rgb(0,0,0);
     background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(62,0,71,1) 35%, rgba(0,48,57,1) 100%); 
 }
 .navbar-brand{
     padding: 20px;
+    font-size: 2rem;
+}
+a, btn btn-secondary dropdown-toggle{
+    margin-right: 3rem;
 }
 .prod{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin-top: 1px;
     padding: 2%;
+}
+.card{
+    margin-top: 2rem;
+}
+.splash{
+    background: rgb(0,0,0);
+    background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(62,0,71,1) 35%, rgba(0,48,57,1) 100%); 
+    padding: 5%;
+    height: 60vh;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    padding: 10 0px 0px;
+}
+.splash::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform-origin: top left;
+    transform: skewY(-10deg);
+}
+.splash p{
+    padding: 2rem;
+    font-size: 20px;
 }
