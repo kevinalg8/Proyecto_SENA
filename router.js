@@ -13,5 +13,9 @@ router.get('/registroUsuario', (req, res) => {
     res.render('registroUsuario.ejs')
 })
 
+router.get('/Inicio', (req, res) => {
+    res.render('Inicio.ejs')
+})
+
 
 module.exports = router;
