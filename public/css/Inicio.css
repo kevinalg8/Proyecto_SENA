@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Caja1{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    height: 90vh;
+    background-color: darkgray;
+    position:relative;
+    z-index: -1;
+}
+.text-p{
+    margin-top: 2rem;
+}
+.Caja1 p{
+    font-size: 2rem;
+}
+.who{
+    height: 90vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    text-align: center;
+}

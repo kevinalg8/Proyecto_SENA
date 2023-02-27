@@ -59,7 +59,7 @@ a, btn btn-secondary dropdown-toggle{
     left: 0;
     bottom: 0;
     transform-origin: top left;
-    transform: skewY(-10deg);
+    transform: skewY(-7deg);
 }
 .splash p{
     padding: 2rem;
