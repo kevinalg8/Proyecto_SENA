@@ -15,12 +15,13 @@
 <div class="container">
     <div class="col-md-9 card mx-auto d-flex flex-row px-0">
         <div class="img-left d-md-flex flex-column d-none">
-            <h1 class="text-white text">Sign Up</h1>
+            <h1 class="text-white text text-center">Crear cuenta</h1>
             <p class="text-white text-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
-            <button class="btn btn-p text-white">Sign Up</button>
+            <a href="/registroUsuario"><input type="button" class="btn btn-p d-block w-50 mt-3" value='Registro Usuario'></a> 
+            <a href="/registro"><input type="button" class="btn btn-p d-block w-50 mt-3" value='Registro Entrenador'></a> 
         </div>
         <div class="card-body d-flex flex-column justify-content-center">
-            <h4 class="title text-center mt-1 pb-3">Login into accont</h4>
+            <h4 class="title text-center mt-1 pb-3">Ingresar</h4>
             <form class='col-sm-10 col-12 mx-auto' action="" method="POST">
                 <div class='form-group '>
                   <input type="email" class="form-control " placeholder='email' maxlength="35">
@@ -29,7 +30,8 @@
                   <input type="password" class="form-control" placeholder='***' maxlength="8">
                 </div>
                  <div class=''>
-                  <input type="submit" class="btn  d-block w-100" value='Login'>
+                  <input type="submit" class="btn  d-block w-100" value='Ingresar'>
+                  <a href="/registro"><p class="text-center mt-3">No tienes una cuenta?</p></a>
                 </div>
          </form>
         </div>
@@ -46,6 +48,7 @@
                     <input placeholder="Username" id="user" type="text" class="input">
                 </div>
                 <div class="group">
+                    
                     <input placeholder="Password" id="pass" type="password" class="input" data-type="password">
                 </div>
                 <div class="group">
