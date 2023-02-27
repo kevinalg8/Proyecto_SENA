@@ -32,7 +32,10 @@ a, btn btn-secondary dropdown-toggle{
     padding: 2%;
 }
 .card{
-    margin-top: 2rem;
+    margin: 0.5%;
+}
+.navbar-toggler-icon{
+    border: 2px solid white;
 }
 .splash{
     background: rgb(0,0,0);
@@ -62,3 +65,12 @@ a, btn btn-secondary dropdown-toggle{
     padding: 2rem;
     font-size: 20px;
 }
+.planes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+h1{
+    text-align: center;
+}
+
