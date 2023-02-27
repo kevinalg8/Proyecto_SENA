@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/resources/css/bootstrap.css">
-    <link rel="stylesheet" href="/resources/css/plan.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ruta de estilos -->
+  <link rel="stylesheet" href="/resources/css/bootstrap.css">
+  <!-- css puro -->
+  <link rel="stylesheet" href="/resources/css/plan.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="card" style="width: 18.5rem;" id="plan-card">
-        <img src="/resources/img/plan01.png" class="card-img-top" alt="...">
-        <div class="card-body">
+
+  <%- include('./partials/navbar.ejs'); %>
+  <section class="plan">
+    <% for(i=0; i<=5; i++){ %>
+      <div class="card" style="width: 18rem;" id="plan-card">
+        <img src="/resources/img/plan01.png" style="width: 17rem;" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <!-- titulo del las targetas -->
           <h5 class="card-title">PLAN DE RECOMPOSICION CORPORAL</h5>
           <p class="card-text">Plan basado en ejercicios para lograr una recomposicion pre-volumen</p>
-          <p>
-            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-              Toggle width collapse
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-dark" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              Detalles
             </button>
-          </p>
-          
-          <div >
+          </div>
+
+          <div>
             <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                <div class="card" style="width: 16rem;">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">el entreno consiste en 50 sesiones durante 3 meses cada una de hora y media donde se harán entrenamientos basados en la recomposicion corporal necesaria antes de iniciar una etapa de volumen</li>
-                      <li class="list-group-item">Horarios disponibles: M-J 11:00 L-W 15:00</li>
-                      <li class="list-group-item">Juan Diego Rodriguez<br> +57 3125054524 <br>jtrainer@gym.nopain.nogain</li>
-                      <li class="list-group-item">$50000COP</li>
-                    </ul>
-                  </div>
+              <div class="card" style="width: 16rem;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">El entreno consiste en 50 sesiones durante 3 meses cada una de hora y
+                    media donde se harán entrenamientos basados en la recomposicion corporal necesaria antes de iniciar
+                    una etapa de volumen</li>
+                  <li class="list-group-item">Horarios disponibles: M-J 11:00 L-W 15:00</li>
+                  <li class="list-group-item">Juan Diego Rodriguez<br> +57 3125054524 <br>jtrainer@gym.nopain.nogain
+                  </li>
+                  <li class="list-group-item">$50000COP</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <script src="/resources/js/bootstrap.js"></script>
+      <% } %>
+  </section>
+  <!-- script necesario para el funcionamiento de las targetas -->
+  <script src="/resources/js/bootstrap.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,17 @@
-
 #plan-card{
     top: 2rem;
     left: 2rem;
 }
+
+.plan{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 1px;
+    padding: 2%;
+}
+.card{
+    margin-top: 2rem;
+}
+
