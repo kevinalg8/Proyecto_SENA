@@ -1,6 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
+
+router.get('/productos', (req, res) => {
+    res.render('Productos.ejs')
+})
+
 router.get('/productos', (req, res) => {
     res.render('Productos.ejs')
 })
@@ -16,6 +21,5 @@ router.get('/registroUsuario', (req, res) => {
 router.get('/Inicio', (req, res) => {
     res.render('Inicio.ejs')
 })
-
 
 module.exports = router;

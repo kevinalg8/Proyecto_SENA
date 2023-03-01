@@ -7,7 +7,7 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
     background-color: darkgray;
     position:relative;
     z-index: -1;
@@ -19,7 +19,7 @@
     font-size: 2rem;
 }
 .who{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
