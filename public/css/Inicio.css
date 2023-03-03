@@ -1,16 +1,21 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     box-sizing: border-box;
 }
 .Caja1{
+    margin-top: 1rem;
+    color: aliceblue;
     display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
     height: 100vh;
-    background-color: darkgray;
+    background-image: url(/resources/img/Inicio.jpg);
+    background-size: 100%;
+    background-repeat: repeat;
+    background-position: right;
+    /* background-color: darkgray;*/
     position:relative;
-    z-index: -1;
 }
 .text-p{
     margin-top: 2rem;
@@ -19,7 +24,8 @@
     font-size: 2rem;
 }
 .who{
-    height: 80vh;
+    margin: 5%;
+    height: 45vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
@@ -27,7 +33,8 @@
 }
 .Algunos{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
 }

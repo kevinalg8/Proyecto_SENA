@@ -3,8 +3,8 @@
 /* Titulos */
 @import url('https://fonts.googleapis.com/css2?family=Murecho:wght@500&display=swap');
 *{
-  margin: 0;  
-  padding: 0;
+  margin: 0%;  
+  padding: 0%;
   box-sizing: border-box;
   font-family: 'Rajdhani', sans-serif;
 }
@@ -14,7 +14,7 @@ h1{
 /* Color degrade */
 nav{
     font-size: 2rem;
-    height: 10%;
+    height: 13%;
     background: rgb(0,0,0);
     background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(62,0,71,1) 35%, rgba(0,48,57,1) 100%); 
 }
@@ -29,7 +29,7 @@ a, btn btn-secondary dropdown-toggle{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    margin-top: 1px;
+    margin-top: 2px;
     padding: 2%;
 }
 .card{
@@ -42,11 +42,11 @@ a, btn btn-secondary dropdown-toggle{
     background: rgb(0,0,0);
     background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(62,0,71,1) 35%, rgba(0,48,57,1) 100%); 
     padding: 5%;
-    height: 60vh;
+    height: 65vh;
     width: 100%;
     margin: auto;
     position: relative;
-    padding: 10 0px 0px;
+    padding: 7 0px 0px;
 }
 .splash::after{
     content: "";
@@ -63,8 +63,8 @@ a, btn btn-secondary dropdown-toggle{
     transform: skewY(-7deg);
 }
 .splash p{
-    padding: 2rem;
-    font-size: 20px;
+    padding: 1rem;
+    font-size: 30px;
 }
 .planes{
     display: flex;
