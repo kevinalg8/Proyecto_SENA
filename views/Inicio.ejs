@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--CSS-->
     <link rel="stylesheet" href="resources/css/Inicio.css" />
     <!-- CDN's y Iconos -->
     <link
@@ -51,6 +52,40 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum,
         </p>
       </div>
+    </section>
+    <h1 class="display-1">Algunos planes</h1>
+    <section class="Algunos">
+      <% for(i=0; i<=1; i++){ %>
+        <div class="card" style="width: 18rem;" id="plan-card">
+        <img src="/resources/img/plan01.png" style="width: 10rem;" class="card-img-top mx-auto">
+        <div class="card-body text-center">
+          <!-- titulo del las targetas -->
+          <h5 class="card-title">PLAN DE RECOMPOSICION CORPORAL</h5>
+          <p class="card-text">Plan basado en ejercicios para lograr una recomposicion pre-volumen</p>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-dark" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              Detalles
+            </button>
+          </div>
+          <div>
+            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+              <div class="card" style="width: 16rem;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">El entreno consiste en 50 sesiones durante 3 meses cada una de hora y
+                    media donde se harán entrenamientos basados en la recomposicion corporal necesaria antes de iniciar
+                    una etapa de volumen</li>
+                  <li class="list-group-item">Horarios disponibles: M-J 11:00 L-W 15:00</li>
+                  <li class="list-group-item">Juan Diego Rodriguez<br> +57 3125054524 <br>jtrainer@gym.nopain.nogain
+                  </li>
+                  <li class="list-group-item">$50000COP</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% } %>
     </section>
 
     <%- include('./partials/AboutUs.ejs'); %>

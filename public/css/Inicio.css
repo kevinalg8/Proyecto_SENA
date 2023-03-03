@@ -19,9 +19,15 @@
     font-size: 2rem;
 }
 .who{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-evenly;
     text-align: center;
+}
+.Algunos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
