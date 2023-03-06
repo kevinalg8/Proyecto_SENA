@@ -14,7 +14,7 @@ body{
     min-height:500px;
   }
   
-  .img-left{
+  .p-left{
     width:45%;
     background: rgb(0,0,0);
     background: linear-gradient(50deg, rgba(0,0,0,1) 0%, rgba(62,0,71,1) 35%, rgba(0,48,57,1) 100%);

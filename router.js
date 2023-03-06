@@ -14,7 +14,11 @@ router.get('/planes', (req, res) => {
     res.render('Plan.ejs')
 })
 
-router.get('/registroUsuario', (req, res) => {
+router.get('/registroentrenador', (req, res) => {
+    res.render('registroEntrenador.ejs')
+})
+
+router.get('/registrousuario', (req, res) => {
     res.render('registroUsuario.ejs')
 })
 
