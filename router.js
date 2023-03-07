@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-
+//sudo pkill node Para volver a inicar el servidor local
 
 router.get('/productos', (req, res) => {
     res.render('Productos.ejs')

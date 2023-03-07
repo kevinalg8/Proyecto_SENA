@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const Puerto = 8080;
 
 app.use("/resources", express.static("public"));
 app.use("/resources", express.static(__dirname + "/public"));
@@ -18,7 +19,14 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
+const puerto = ()=> {
+    app.listen(`${Puerto}`)
+    console.log(`SERVER corriendo en http://localhost:${Puerto}`);
+}
+puerto();
+
+/*
 app.listen(8080, ()=>{
     console.log('SERVER corriendo en http://localhost:8080');
 });
-
+*/
