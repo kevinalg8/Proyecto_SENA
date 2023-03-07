@@ -19,7 +19,7 @@ app.get('/', (req, res) => {
     res.render('index')
 })
 
-const puerto = ()=> {
+const puerto = () => {
     app.listen(`${Puerto}`)
     console.log(`SERVER corriendo en http://localhost:${Puerto}`);
 }
