@@ -26,4 +26,8 @@ router.get('/Inicio', (req, res) => {
     res.render('Inicio.ejs')
 })
 
+router.get('/navbar', (req, res) => {
+    res.render('navbar2.ejs')
+})
+
 module.exports = router;
